@@ -1,0 +1,489 @@
+body {
+	font-family: arial, sans-serif;
+}
+nav {
+	width: 100%;
+	height: 60px;
+	background: #344051;
+}
+.logo {
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 275px;
+	float: left;
+}
+.menu {
+	float: left;
+	padding-left: 300px;
+}
+.menu li {
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 28px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.main {
+	width: 100%;
+	height: 945px;
+	background: url(../img/ia3.jpg) center/cover no-repeat;
+}
+.title_conteiner {
+	float:left;
+	margin: 350px 200px 0px 300px;
+	color: #2c384a;
+	text-align: center;
+}
+.title_conteiner h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.title_conteiner h4 {
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d;
+}
+.title_conteiner input {
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 13px;
+	padding: 0px 16px;
+	margin: 58px 14px 0px 14px;
+}
+.resume {
+	width: 100%;
+	height: 720px;
+	background: #fcfdfd;
+}
+.resume h2 {
+	margin: 100px auto 0px auto;
+	width: 150px;
+	font-size: 23px;
+	font-weight: bold;
+	color: #263244;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.resume img {
+	display: block;
+	margin: 0px auto;
+}
+.resume p {
+	width: 40%;
+	height: 130px;
+	margin: 25px auto 0px auto;
+	font-size: 14px;
+	color: #a8acb2;
+}
+.resume input {
+	display: block;
+	height: 35px;
+	margin: 35px auto 0px auto;
+	background: none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #6f707e;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 13px;
+	padding: 0px 10px 0px 30px;
+	background-image: url(../img/иконка.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;	
+}
+.skills {
+	width: 100%;
+	height: 523px;
+	background-image: url(../img/картинка_фона.jpg);
+	background-repeat: no-repeat;
+}
+.skills img {
+	width: 60px;
+	height: 50px;
+}
+.skills h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	width: 150px;
+	font-size: 23px;
+	color: #263244;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.skills h4{
+	font-size: 20px;
+	color: #cf7600;
+	font-weight: bold;
+	margin: 35px auto 18px auto;
+}
+.skills p {
+	font-size: 16px;
+	color: #989ca5;
+}
+.webdisign {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 12%;
+	text-align: center;
+}
+.razrabotka {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 0px;
+	text-align: center;
+}
+.ceo {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 0px;
+	text-align: center;
+}
+.marketing {
+	float: left;
+	width: 14%;
+	margin: 100px 10% auto 0px;
+	text-align: center;
+}
+.cases {
+	width: 100%;
+	height: auto;
+	margin-bottom: 200px;
+}
+.cases h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	width: 80px;
+	font-size: 23px;
+	color: #263244;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.zag {
+	display: block;
+	font-size: 16px;
+	color: #989ca5;
+	text-align: center;
+	margin: 40px auto 40px auto;
+}
+.skreen {
+	width: 75%;
+	margin: 0px auto;
+}
+.skreen img {
+	width: 100%;
+}
+.skreen h3 {
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+.skreen p {
+	margin-bottom: 15px;
+}
+.client_website {
+	float: left;
+	width: 20%;
+	margin: 40px 5% auto 0px;
+	text-align: left;
+}
+.client_website input {
+	height: 45px;
+	width: 200px;
+	background: #63b5ae;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0px 10px 0px 30px;
+}	
+.name_projekt {
+	float: left;
+	width: 75%;
+	margin: 40px auto auto 0px;
+	text-align: left;
+}
+.stoimost {
+	width: 50%;
+	text-align: center;
+	margin: 0px auto;
+}
+.stoimost h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	font-size: 23px;
+	color: #263244;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.stoimost h3 {
+	font-size: 21px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.stoimost select {
+	width: 100%;
+	height: 55px;
+	background: #eeeeee;
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+.stoimost table {
+	width: 100%;
+	padding-top: 30px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #d1d1d1;
+}
+.lev {
+	font-weight: bold;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 25px;
+}
+.prav {
+	font-weight: bold;
+	text-align: right;
+	font-size: 16px;
+	padding-bottom: 25px;
+}
+.statistics {
+	width: 100%;
+	height: 499px;
+	background-image: url(../img/фон.jpg);
+	background-repeat: no-repeat;
+	margin-top: 100px;
+}
+.statistics h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	width: 290px;
+	font-size: 23px;
+	color: #263244;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.statistics img {
+	width: 60px;
+	height: 50px;
+}
+.statistics h4{
+	font-size: 20px;
+	color: #323e4f;
+	font-weight: bold;
+	margin: 35px auto 18px auto;
+}
+.statistics p {
+	font-size: 16px;
+	color: #323e4f;
+}
+.happy {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 12%;
+	text-align: center;
+}
+.srok {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 0px;
+	text-align: center;
+}
+.projekt {
+	float: left;
+	width: 14%;
+	margin: 100px 6% auto 0px;
+	text-align: center;
+}
+.nagrada {
+	float: left;
+	width: 14%;
+	margin: 100px 10% auto 0px;
+	text-align: center;
+}
+.otzivi {
+	width: 100%;
+	height: 600px;
+	background-color: #ffffff;
+}
+.otzivi p {
+	margin: 17px 0px;
+}
+.otzivi h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	width: 130px;
+	font-size: 23px;
+	color: #263244;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.otzivi img {
+	width: 100px;
+	height: 100px;
+	margin: 17px;
+}
+.otziv1 {
+	float: left;
+	width: 25%;
+	margin: 60px 6% auto auto;
+	text-align: center;
+}
+.otziv2 {
+	float: left;
+	width: 25%;
+	margin: 60px 6% auto 0px;
+	text-align: center;
+}
+.otziv3 {
+	float: left;
+	width: 25%;
+	margin: 60px auto auto 0px;
+	text-align: center;
+}
+.mycontact {
+	width: 100%;
+	height: 712px;
+	background-image: url(../img/фон2.jpg);
+	background-repeat: no-repeat;
+}
+.mycontact h2 {
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+	width: 200px;
+	font-size: 23px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #d17700;
+}
+.mycontact p {
+	width: 600px;
+	margin: 0px auto;
+	padding: 32px 0px 25px 0px;
+	color: #ffffff;
+}
+.address {
+	float: left;
+	width: 15%;
+	margin: 25px 6% 40px 20%;
+	text-align: center;
+}
+.e-mail {
+	float: left;
+	width: 15%;
+	margin: 25px 6% 40px 0px;
+	text-align: center;
+}
+.telephone {
+	float: left;
+	width: 15%;
+	margin: 25px 20% 40px 0px;
+	text-align: center;
+}
+.address h4 {
+	color: #ffffff;
+	padding: 15px;
+}
+.e-mail a {
+	color: #ffffff;
+	padding: 15px;
+}
+.e-mail h4 {
+	padding: 15px;
+}
+.telephone h4 {
+	color: #ffffff;
+	padding: 15px;
+}
+.mycontact h3 {
+	width: 300px;
+	margin: 0px auto;
+	padding: 40px 0px 40px 0px;
+	color: #ffffff;
+}
+.mycontact form {
+	width: 530px;
+	margin: 0px auto;
+}
+.imia {
+	float: left;
+	width: 250px;
+	height: 35px;
+	margin: 0px 15px 15px 0px;
+}
+.pochta {
+	float: left;
+	width: 250px;
+	height: 35px;
+	margin: 0px 0px 15px 15px;
+}
+.sms {
+	float: left;
+	width: 530px;
+	height: 35px;
+	margin: 0px 0px 30px 0px;
+}
+.otpravka {
+	display: block;
+	height: 50px;
+	width: 130px;
+	text-align: center;
+	border: 2px solid #ffffff;
+	background: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 13px;
+	margin: 0px auto 50px auto;
+	text-align: center;
+}	
+.socseti {
+	text-align: center;
+	margin: 0px auto;
+}
+.socseti img {
+	margin: 0px 25px 0px 25px;
+}
+.mesto {
+	width: 100%;
+	height: 450px;
+	margin: 0px;
+}
+footer {
+	width: 100%;
+	height: 90px;
+	background: #354051;
+	text-align: center
+}
+footer p {
+	color: #ffffff;
+	padding: 38px 0px 0px 0px;
+}
