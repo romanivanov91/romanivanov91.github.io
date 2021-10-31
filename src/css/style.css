@@ -1,10 +1,89 @@
 body {
 	font-family: arial, sans-serif;
 }
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 nav {
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+	z-index:100;
+}
+@keyframes comming {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .logo {
 	color: #fff;
@@ -12,10 +91,23 @@ nav {
 	line-height: 60px;
 	padding-left: 275px;
 	float: left;
+	-webkit-animation: comming ease 2s;
+	-o-animation: comming ease 2s;
+	animation: comming ease 2s ;
 }
 .menu {
 	float: left;
 	padding-left: 300px;
+}
+@keyframes topshift {
+	from {
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to {
+		opacity: 1;
+		margin-top: 0px;
+	}
 }
 .menu li {
 	float: left;
@@ -24,17 +116,69 @@ nav {
 	margin-right: 28px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 1s ease forwards;
+	-o-animation: topshift 1s ease forwards;
+	animation: topshift 1s ease forwards;
+	opacity: 0;
+}
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
+.menu li a {
+	transition: all 0.5s;
+	color: white;
+	transform: scale(1.0);
+	display: inline-block;
+}
+.menu li a:visited {
+	color: white;
+}
+.menu li a:hover {
+	color: #d17700;
+}
+.menu li a:active {
+	transform: scale(1.1);
 }
 .main {
 	width: 100%;
-	height: 945px;
-	background: url(../img/ia3.jpg) center/cover no-repeat;
+	height: 960px;
+	background: url(../img/ia.jpg) center/cover no-repeat;
+	background-repeat: no-repeat;
+}
+@keyframes titlemove {
+	from {
+		opacity: 0;
+		margin-left: -400px;
+	}
+	to {
+		opacity: 1;
+		margin-left: 300px;
+	}
 }
 .title_conteiner {
 	float:left;
 	margin: 350px 200px 0px 300px;
 	color: #2c384a;
 	text-align: center;
+	-webkit-animation: titlemove 1s ease forwards;
+	-o-animation: titlemove 1s ease forwards;
+	animation: titlemove 1s ease forwards;
+	-webkit-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	animation-delay: 3s;
+	opacity: 0;
 }
 .title_conteiner h1 {
 	font-size: 30px;
@@ -55,14 +199,35 @@ nav {
 	font-size: 13px;
 	padding: 0px 16px;
 	margin: 58px 14px 0px 14px;
+	transition: all 0.5s;
+	transform: scale(1.0);
+}
+.title_conteiner input:hover {
+	background: #344051;
+	color: white;
+}
+.title_conteiner input:active {
+	transform: scale(1.2)
 }
 .resume {
 	width: 100%;
-	height: 720px;
-	background: #fcfdfd;
+	height: auto;
+	background-color: #fcfdfd;
+}
+@keyframes resh2move {
+	from {
+		opacity: 0;
+		margin-left: -400px;
+	}
+	to {
+		opacity: 1;
+		margin-left: 45%;
+	}
 }
 .resume h2 {
-	margin: 100px auto 0px auto;
+	margin: 0px auto 50px 45%;
+	padding-top: 50px;
+	padding-bottom: 100px;
 	width: 150px;
 	font-size: 23px;
 	font-weight: bold;
@@ -72,10 +237,42 @@ nav {
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: #d17700;
+	-webkit-animation: resh2move 1s ease forwards;
+	-o-animation: resh2move 1s ease forwards;
+	animation: resh2move 1s ease forwards;
+	-webkit-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+	opacity: 0;
+}
+@keyframes resimgmove {
+	from {
+		opacity: 0;
+		margin-right: -400px;
+	}
+	to {
+		opacity: 1;
+		margin-right: 40%;
+	}
 }
 .resume img {
 	display: block;
 	margin: 0px auto;
+	-webkit-animation: resimgmove 1s ease forwards;
+	-o-animation: resimgmove 1s ease forwards;
+	animation: resimgmove 1s ease forwards;
+	-webkit-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+	opacity: 0;
+}
+@keyframes respmove {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;;
+	}
 }
 .resume p {
 	width: 40%;
@@ -83,6 +280,13 @@ nav {
 	margin: 25px auto 0px auto;
 	font-size: 14px;
 	color: #a8acb2;
+	-webkit-animation: respmove 1s ease forwards;
+	-o-animation: respmove 1s ease forwards;
+	animation: respmove 1s ease forwards;
+	-webkit-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+	opacity: 0;
 }
 .resume input {
 	display: block;
@@ -99,7 +303,16 @@ nav {
 	background-image: url(../img/иконка.png);
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 25px;	
+	background-size: 25px;
+	transition: all 0.5s;
+	transform: scale(1.0)
+}
+.resume input:hover {
+	background: #344051;
+	color: white;
+}
+.resume input:active {
+	transform: scale(1.2)
 }
 .skills {
 	width: 100%;
@@ -110,6 +323,14 @@ nav {
 .skills img {
 	width: 60px;
 	height: 50px;
+}
+@keyframes skh2move {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;;
+	}
 }
 .skills h2 {
 	margin: 0px auto 0px auto;
@@ -123,6 +344,13 @@ nav {
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: #d17700;
+	-webkit-animation: skh2move 1s ease forwards;
+	-o-animation: skh2move 1s ease forwards;
+	animation: skh2move 1s ease forwards;
+	-webkit-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+	opacity: 0;
 }
 .skills h4{
 	font-size: 20px;
@@ -134,29 +362,97 @@ nav {
 	font-size: 16px;
 	color: #989ca5;
 }
+@keyframes skwebmove {
+	from {
+		opacity: 0;
+		margin-left: -50%;
+	}
+	to {
+		opacity: 1;
+		margin-left: 12%;
+	}
+}
 .webdisign {
 	float: left;
 	width: 14%;
 	margin: 100px 6% auto 12%;
 	text-align: center;
+	-webkit-animation: skwebmove 1s ease forwards;
+	-o-animation: skwebmove 1s ease forwards;
+	animation: skwebmove 1s ease forwards;
+	-webkit-animation-delay: 7s;
+	-o-animation-delay: 7s;
+	animation-delay: 7s;
+	opacity: 0;
+}
+@keyframes skrazmove {
+	from {
+		opacity: 0;
+		margin-left: -50%;
+	}
+	to {
+		opacity: 1;
+		margin-left: 0px;
+	}
 }
 .razrabotka {
 	float: left;
 	width: 14%;
 	margin: 100px 6% auto 0px;
 	text-align: center;
+	-webkit-animation: skrazmove 1s ease forwards;
+	-o-animation: skrazmove 1 ease forwards;
+	animation: skrazmove 1s ease forwards;
+	-webkit-animation-delay: 9s;
+	-o-animation-delay: 9s;
+	animation-delay: 9s;
+	opacity: 0;
+}
+@keyframes skrceomove {
+	from {
+		opacity: 0;
+		margin-left: -50%;
+	}
+	to {
+		opacity: 1;
+		margin-left: 0px;
+	}
 }
 .ceo {
 	float: left;
 	width: 14%;
 	margin: 100px 6% auto 0px;
 	text-align: center;
+	-webkit-animation: skrceomove 1s ease forwards;
+	-o-animation: skrceomove 1s ease forwards;
+	animation: skrceomove 1s ease forwards;
+	-webkit-animation-delay: 11s;
+	-o-animation-delay: 11s;
+	animation-delay: 11s;
+	opacity: 0;
+}
+@keyframes skrmarmove {
+	from {
+		opacity: 0;
+		margin-left: -50%;
+	}
+	to {
+		opacity: 1;
+		margin-left: 0px;
+	}
 }
 .marketing {
 	float: left;
 	width: 14%;
 	margin: 100px 10% auto 0px;
 	text-align: center;
+	-webkit-animation: skrmarmove 1s ease forwards;
+	-o-animation: skrmarmove 1s ease forwards;
+	animation: skrmarmove 1s ease forwards;
+	-webkit-animation-delay: 13s;
+	-o-animation-delay: 13s;
+	animation-delay: 13s;
+	opacity: 0;
 }
 .cases {
 	width: 100%;
@@ -211,7 +507,16 @@ nav {
 	color: #ffffff;
 	font-size: 16px;
 	padding: 0px 10px 0px 30px;
+	transition: all 0.5s;
+	transform: scale(1.0)
 }	
+.client_website input:hover {
+	background: #344051;
+	color: white;
+}
+.client_website input:active {
+	transform: scale(1.2)
+}
 .name_projekt {
 	float: left;
 	width: 75%;
@@ -266,9 +571,10 @@ nav {
 }
 .statistics {
 	width: 100%;
-	height: 499px;
+	height: 500px;
 	background-image: url(../img/фон.jpg);
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	margin-top: 100px;
 }
 .statistics h2 {
@@ -463,7 +769,16 @@ nav {
 	font-size: 13px;
 	margin: 0px auto 50px auto;
 	text-align: center;
+	transition: all 0.5s;
+	transform: scale(1.0)
 }	
+.otpravka:hover {
+	background: #fff;
+	color: black;
+}
+.otpravka:active {
+	transform: scale(1.2);
+}
 .socseti {
 	text-align: center;
 	margin: 0px auto;
