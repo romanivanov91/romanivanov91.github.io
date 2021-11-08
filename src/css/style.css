@@ -111,7 +111,7 @@ nav {
 	float: left;
 	line-height: 60px;
 	color: #fff;
-	margin-right: 28px;
+	margin-left: 28px;
 	font-size: 14px;
 	text-transform: uppercase;
 	-webkit-animation: topshift 1s ease forwards;
@@ -169,9 +169,10 @@ nav {
 }
 .title_conteiner {
 	float:left;
-	margin: 350px 0px 0px 0px;
 	color: #2c384a;
 	text-align: center;
+	margin-top: 200px;
+	width: 100%;
 	-webkit-animation: titlemove 1s ease forwards;
 	-o-animation: titlemove 1s ease forwards;
 	animation: titlemove 1s ease forwards;
@@ -181,8 +182,9 @@ nav {
 	opacity: 0;
 }
 .title_conteiner h1 {
-	font-size: 30px;
-	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 600;
 }
 .title_conteiner h4 {
 	margin-top: 20px;
@@ -211,7 +213,7 @@ nav {
 }
 .resume {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	background-color: #fcfdfd;
 }
 @keyframes resh2move {
@@ -221,13 +223,11 @@ nav {
 	}
 	to {
 		opacity: 1;
-		margin-left: 45%;
 	}
 }
 .resume h2 {
-	margin: 0px auto 50px 45%;
 	padding-top: 50px;
-	padding-bottom: 100px;
+	margin: 0px auto;
 	width: 150px;
 	font-size: 23px;
 	font-weight: bold;
@@ -237,9 +237,9 @@ nav {
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: #d17700;
-	-webkit-animation: resh2move 1s ease forwards;
-	-o-animation: resh2move 1s ease forwards;
-	animation: resh2move 1s ease forwards;
+	-webkit-animation: resh2move 2s ease forwards;
+	-o-animation: resh2move 2s ease forwards;
+	animation: resh2move 2s ease forwards;
 	-webkit-animation-delay: 5s;
 	-o-animation-delay: 5s;
 	animation-delay: 5s;
@@ -252,15 +252,14 @@ nav {
 	}
 	to {
 		opacity: 1;
-		margin-right: 40%;
 	}
 }
 .resume img {
 	display: block;
 	margin: 0px auto;
-	-webkit-animation: resimgmove 1s ease forwards;
-	-o-animation: resimgmove 1s ease forwards;
-	animation: resimgmove 1s ease forwards;
+	-webkit-animation: resimgmove 2s ease forwards;
+	-o-animation: resimgmove 2s ease forwards;
+	animation: resimgmove 2s ease forwards;
 	-webkit-animation-delay: 5s;
 	-o-animation-delay: 5s;
 	animation-delay: 5s;
@@ -275,11 +274,10 @@ nav {
 	}
 }
 .resume p {
-	width: 40%;
-	height: 130px;
-	margin: 25px auto 0px auto;
 	font-size: 14px;
 	color: #a8acb2;
+	margin: 0px auto;
+	padding-bottom: 36px;
 	-webkit-animation: respmove 1s ease forwards;
 	-o-animation: respmove 1s ease forwards;
 	animation: respmove 1s ease forwards;
@@ -288,10 +286,18 @@ nav {
 	animation-delay: 6s;
 	opacity: 0;
 }
+@keyframes respmove {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;;
+	}
+}
 .resume input {
 	display: block;
 	height: 35px;
-	margin: 35px auto 0px auto;
+	margin: 0px auto;
 	background: none;
 	border-style: solid;
 	border-width: 2px;
@@ -306,6 +312,13 @@ nav {
 	background-size: 25px;
 	transition: all 0.5s;
 	transform: scale(1.0)
+	-webkit-animation: respmove 1s ease forwards;
+	-o-animation: respmove 1s ease forwards;
+	animation: respmove 1s ease forwards;
+	-webkit-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+	opacity: 0;
 }
 .resume input:hover {
 	background: #344051;
@@ -369,20 +382,20 @@ nav {
 	}
 	to {
 		opacity: 1;
-		margin-left: 12%;
+		margin-left: 0px;
 	}
 }
 .webdisign {
 	float: left;
-	width: 14%;
-	margin: 100px 6% auto 12%;
+	margin: 100px auto auto auto;
+	width: 100%;
 	text-align: center;
 	-webkit-animation: skwebmove 1s ease forwards;
 	-o-animation: skwebmove 1s ease forwards;
 	animation: skwebmove 1s ease forwards;
-	-webkit-animation-delay: 7s;
-	-o-animation-delay: 7s;
-	animation-delay: 7s;
+	-webkit-animation-delay: 9s;
+	-o-animation-delay: 9s;
+	animation-delay: 9s;
 	opacity: 0;
 }
 @keyframes skrazmove {
@@ -397,21 +410,21 @@ nav {
 }
 .razrabotka {
 	float: left;
-	width: 14%;
-	margin: 100px 6% auto 0px;
+	margin: 100px auto auto auto;
+	width: 100%;
 	text-align: center;
 	-webkit-animation: skrazmove 1s ease forwards;
 	-o-animation: skrazmove 1 ease forwards;
 	animation: skrazmove 1s ease forwards;
-	-webkit-animation-delay: 9s;
-	-o-animation-delay: 9s;
-	animation-delay: 9s;
+	-webkit-animation-delay: 7s;
+	-o-animation-delay: 7s;
+	animation-delay: 7s;
 	opacity: 0;
 }
 @keyframes skrceomove {
 	from {
 		opacity: 0;
-		margin-left: -50%;
+		margin-left: 2000px;
 	}
 	to {
 		opacity: 1;
@@ -420,44 +433,44 @@ nav {
 }
 .ceo {
 	float: left;
-	width: 14%;
-	margin: 100px 6% auto 0px;
+	margin: 100px auto auto auto;
+	width: 100%;
 	text-align: center;
 	-webkit-animation: skrceomove 1s ease forwards;
 	-o-animation: skrceomove 1s ease forwards;
 	animation: skrceomove 1s ease forwards;
-	-webkit-animation-delay: 11s;
-	-o-animation-delay: 11s;
-	animation-delay: 11s;
+	-webkit-animation-delay: 7s;
+	-o-animation-delay: 7s;
+	animation-delay: 7s;
 	opacity: 0;
 }
 @keyframes skrmarmove {
 	from {
 		opacity: 0;
-		margin-left: -50%;
+		margin-left: 2000px;
 	}
 	to {
 		opacity: 1;
 		margin-left: 0px;
+
 	}
 }
 .marketing {
 	float: left;
-	width: 14%;
-	margin: 100px 10% auto 0px;
+	margin: 100px auto auto auto;
+	width: 100%;
 	text-align: center;
 	-webkit-animation: skrmarmove 1s ease forwards;
 	-o-animation: skrmarmove 1s ease forwards;
 	animation: skrmarmove 1s ease forwards;
-	-webkit-animation-delay: 13s;
-	-o-animation-delay: 13s;
-	animation-delay: 13s;
+	-webkit-animation-delay: 9s;
+	-o-animation-delay: 9s;
+	animation-delay: 9s;
 	opacity: 0;
 }
 .cases {
 	width: 100%;
 	height: auto;
-	margin-bottom: 200px;
 }
 .cases h2 {
 	margin: 0px auto 0px auto;
@@ -501,12 +514,12 @@ nav {
 }
 .client_website input {
 	height: 45px;
-	width: 200px;
+	width: 150px;
 	background: #63b5ae;
 	border-radius: 5px;
 	color: #ffffff;
 	font-size: 16px;
-	padding: 0px 10px 0px 30px;
+	padding: 0px 15px 0px 15px;
 	transition: all 0.5s;
 	transform: scale(1.0)
 }	
@@ -519,12 +532,12 @@ nav {
 }
 .name_projekt {
 	float: left;
-	width: 75%;
+	width: 100%;
 	margin: 40px auto auto 0px;
 	text-align: left;
 }
 .stoimost {
-	width: 50%;
+	width: 100%
 	text-align: center;
 	margin: 0px auto;
 }
@@ -575,7 +588,6 @@ nav {
 	background-image: url(../img/фон.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	margin-top: 100px;
 }
 .statistics h2 {
 	margin: 0px auto 0px auto;
@@ -604,29 +616,49 @@ nav {
 	font-size: 16px;
 	color: #323e4f;
 }
+.containerflex1 {;
+	display: flex;
+	width: 80%;
+	margin: 0px auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
 .happy {
-	float: left;
-	width: 14%;
-	margin: 100px 6% auto 12%;
+	margin: 50px auto 0px auto;
 	text-align: center;
 }
 .srok {
-	float: left;
-	width: 14%;
-	margin: 100px 6% auto 0px;
+	margin: 50px auto 0px auto;
 	text-align: center;
 }
 .projekt {
-	float: left;
-	width: 14%;
-	margin: 100px 6% auto 0px;
+	margin: 50px auto 0px auto;
 	text-align: center;
 }
 .nagrada {
-	float: left;
-	width: 14%;
-	margin: 100px 10% auto 0px;
+	margin: 50px auto 0px auto;
 	text-align: center;
+}
+.zaiavka{
+	display: block;
+	height: 45px;
+	width: 150px;
+	background: #63b5ae;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0px 15px 0px 15px;
+	margin:0px auto 40px auto;
+	transition: all 0.5s;
+	transform: scale(1.0)
+}	
+.zaiavka:hover {
+	background: #344051;
+	color: white;
+}
+.zaiavka:active {
+	transform: scale(1.2)
 }
 .otzivi {
 	width: 100%;
@@ -634,7 +666,7 @@ nav {
 	background-color: #ffffff;
 }
 .otzivi p {
-	margin: 17px 0px;
+	margin: 17px auto;
 }
 .otzivi h2 {
 	margin: 0px auto 0px auto;
@@ -652,7 +684,8 @@ nav {
 .otzivi img {
 	width: 100px;
 	height: 100px;
-	margin: 17px;
+	display: block;
+	margin: 17px auto 17px auto;
 }
 .otziv1 {
 	width: 25%;
@@ -679,7 +712,7 @@ nav {
 }
 .mycontact h2 {
 	margin: 0px auto 0px auto;
-	padding-top: 100px;
+	padding-top: 50px;
 	width: 200px;
 	font-size: 23px;
 	color: #ffffff;
@@ -691,53 +724,69 @@ nav {
 	border-bottom-color: #d17700;
 }
 .mycontact p {
-	width: 600px;
 	margin: 0px auto;
-	padding: 32px 0px 25px 0px;
+	padding: 32px 25px 25px 25px;
+	text-align: center;
 	color: #ffffff;
+}
+.containerflex2 {
+	display: flex;
+	width: 75%;
+	margin: 0px auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+.containerflex2 img {
+	display: block;
+	margin: 0px auto;
 }
 .address {
-	float: left;
-	width: 15%;
-	margin: 25px 6% 40px 20%;
-	text-align: center;
+	width: 250px;
+	margin: 25px auto 20px auto;
 }
 .e-mail {
-	float: left;
-	width: 15%;
-	margin: 25px 6% 40px 0px;
-	text-align: center;
+	width: 250px;
+	margin: 25px auto 20px auto;
 }
 .telephone {
-	float: left;
-	width: 15%;
-	margin: 25px 20% 40px 0px;
-	text-align: center;
+	width: 250px;
+	margin: 25px auto 20px auto;
 }
-.address h4 {
+.address p {
 	color: #ffffff;
-	padding: 15px;
+	padding: 10px;
+	font-size: 16px;
 }
 .e-mail a {
 	color: #ffffff;
-	padding: 15px;
 }
-.e-mail h4 {
-	padding: 15px;
+.e-mail p {
+	padding: 10px;
+	font-size: 16px;
 }
-.telephone h4 {
+.telephone p {
+	padding: 10px;
 	color: #ffffff;
-	padding: 15px;
+	font-size: 16px;
 }
-.mycontact h3 {
+.mycontact h4 {
 	width: 300px;
 	margin: 0px auto;
 	padding: 40px 0px 40px 0px;
 	color: #ffffff;
+	font-size: 20px;
 }
 .mycontact form {
 	width: 530px;
 	margin: 0px auto;
+}
+.containerflex3 {
+	display: flex;
+	margin: 0px auto;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 .imia {
 	float: left;
@@ -750,6 +799,11 @@ nav {
 	width: 250px;
 	height: 35px;
 	margin: 0px 0px 15px 15px;
+}
+.containerflex4 {
+	display: flex;
+	margin: 0px auto;
+	flex-direction: column;
 }
 .sms {
 	float: left;
@@ -767,7 +821,7 @@ nav {
 	border-radius: 5px;
 	color: #ffffff;
 	font-size: 13px;
-	margin: 0px auto 50px auto;
+	margin: 0px auto 30px auto;
 	text-align: center;
 	transition: all 0.5s;
 	transform: scale(1.0)
@@ -780,11 +834,15 @@ nav {
 	transform: scale(1.2);
 }
 .socseti {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
 	text-align: center;
 	margin: 0px auto;
 }
 .socseti img {
-	margin: 0px 25px 0px 25px;
+	margin: 0px 25px 10px 25px;
 }
 .mesto {
 	width: 100%;
@@ -800,4 +858,90 @@ footer {
 footer p {
 	color: #ffffff;
 	padding: 38px 0px 0px 0px;
+}
+@media (max-width: 766px){
+	.title_conteiner, .title_conteiner h4, .title_conteiner input {
+		color: white;
+		position: relative;
+		z-index: 3;
+	}
+	.title_conteiner input {
+	border: 2px solid #fff;
+	}
+	.main {
+		position: relative;
+	}
+	.main::after {
+		content: "";
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.skills {
+	height: 1400px;
+	background-repeat: repeat;
+	}
+	.statistics {
+	height: 1050px;
+	}
+	.containerflex1 {
+	flex-direction: column;
+	}
+	.mycontact {
+	height: 1000px;
+	background-repeat: repeat;
+	}
+	.containerflex2 {
+	flex-direction: column;
+	}
+}
+.dropdown {
+	text-align: right;
+}
+@media (max-width: 576px){
+	.containerflex3 {
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.mycontact form {
+	width: 350px;
+	margin: 0px auto;
+}
+.imia {
+	float: left;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 15px auto;
+}
+.pochta {
+	float: left;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 15px auto;
+}
+.sms {
+	float: left;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 30px auto;
+}
+.socseti {
+	flex-direction: column;
+}
+.socsetiflex1, .socsetiflex2 {
+	margin: 0px auto;
+}
+.otziv1 {
+	width: 75%;
+}
+.mycontact {
+	height: 1100px;
+	background-repeat: repeat;
+}
+.resume {
+	height: 900px;
+}
 }
