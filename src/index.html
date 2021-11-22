@@ -35,12 +35,12 @@
 					<div class="px-0 col-xxl-6 col-xl-6 col-lg-7 offset-xxl-4 offset-xl-4 offset-lg-2 d-none d-lg-block">
 						<div class="menu">
 							<ul>
-								<li><a href="#">Обо мне</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Кейсы</a></li>
-								<li><a href="#">Прайс</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#idresume">Обо мне</a></li>
+								<li><a href="#idskills">Услуги</a></li>
+								<li><a href="#idcases">Кейсы</a></li>
+								<li><a href="#idstoimost">Прайс</a></li>
+								<li><a href="#idotzivi">Отзывы</a></li>
+								<li><a href="#idmycontact">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -49,12 +49,12 @@
   						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
 
   						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    						<li><a class="dropdown-item" href="#">Обо мне</a></li>
-								<li><a class="dropdown-item" href="#">Услуги</a></li>
-								<li><a class="dropdown-item" href="#">Кейсы</a></li>
-								<li><a class="dropdown-item" href="#">Прайс</a></li>
-								<li><a class="dropdown-item" href="#">Отзывы</a></li>
-								<li><a class="dropdown-item" href="#">Контакты</a></li>
+    						<li><a class="dropdown-item" href="#idresume">Обо мне</a></li>
+								<li><a class="dropdown-item" href="#idskills">Услуги</a></li>
+								<li><a class="dropdown-item" href="#idcases">Кейсы</a></li>
+								<li><a class="dropdown-item" href="#idstoimost">Прайс</a></li>
+								<li><a class="dropdown-item" href="#idotzivi">Отзывы</a></li>
+								<li><a class="dropdown-item" href="#idmycontact">Контакты</a></li>
   							</ul>
 						</div>
 					</div>
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 	</div>
-	<div class="resume">
+	<div class="resume" id="idresume">
 		<div class="container">
 			<div class="row">
 				<div class="col-2"></div>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="skills">
+	<div class="skills" id="idskills">
 		<h2>ЧТО Я УМЕЮ</h2>
 		<div class="container">
 			<div class="row">
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="cases">
+	<div class="cases" id="idcases">
 		<h2>Кейсы</h2>
 		<p class="zag">Описание</p>
 		<div class="skreen">
@@ -154,7 +154,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="stoimost">
+	<div class="stoimost" id="idstoimost">
 		<h2>Расчет стоимости</h2>
 			<div class="container">
 				<div class="row">
@@ -210,27 +210,27 @@
 		<div class="containerflex1">
 		<div class="happy">
 			<img src="img/смайл.png">
-			<h4>120</h4>
+			<h4 class="elementanimation">120</h4>
 			<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
 		</div>
 		<div class="srok">
 			<img src="img/знак.png">
-			<h4>460</h4>
+			<h4 class="elementanimation">460</h4>
 			<p>ЧАСОВ РАБОТЫ</p>
 		</div>
 		<div class="projekt">
 			<img src="img/галочка.png">
-			<h4>340</h4>
+			<h4 class="elementanimation">340</h4>
 			<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
 		</div>
 		<div class="nagrada">
 			<img src="img/кубок.png">
-			<h4>23</h4>
+			<h4 class="elementanimation">23</h4>
 			<p>НАГРАД ПОЛУЧЕНО</p>
 		</div>
 		</div>
 	</div>
-	<div class="otzivi">
+	<div class="otzivi" id="idotzivi">
 		<h2>ОТЗЫВЫ</h2>
 		<div class="otziv1">
 			<img src="img/клиент1.png" alt="фото клиента 1">
@@ -248,7 +248,7 @@
 			<p><b>Имя клиента 3,</b> компания</p>
 		</div>)-->
 	</div>
-	<div class="mycontact">
+	<div class="mycontact" id="idmycontact">
 		<h2>МОИ КОНТАКТЫ</h2>
 		<p>Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, </p>
 		<div class="containerflex2">
@@ -295,6 +295,8 @@
 	<footer>
 		<p>Copyrite©2021 Иванов Роман Disign by Web</p>
 	</footer>
+	<<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.spincrement.min.js"></script>
 	<script src="js\myscript.js"></script>
 	<script src="js\bootstrap.bundle.js"></script>
 </body>

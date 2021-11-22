@@ -945,3 +945,13 @@ footer p {
 	height: 900px;
 }
 }
+
+.elementanimation {
+	opacity: 0;
+}
+/*
+.elementanimation.show-animation {
+	opacity: 1;
+	transition: opacity 1s;
+}
+*/
