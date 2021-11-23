@@ -689,18 +689,19 @@ nav {
 .otziv1 {
 	width: 25%;
 	margin: 0px auto;
+	padding-bottom: 25px;
 	text-align: center;
 }
 .otziv2 {
-	float: left;
 	width: 25%;
-	margin: 60px 6% auto 0px;
+	margin: 0px auto;
+	padding-bottom: 25px;
 	text-align: center;
 }
 .otziv3 {
-	float: left;
 	width: 25%;
-	margin: 60px auto auto 0px;
+	margin: 0px auto;
+	padding-bottom: 25px;
 	text-align: center;
 }
 .mycontact {
@@ -948,6 +949,9 @@ footer p {
 
 .elementanimation {
 	opacity: 0;
+}
+.buttonkarusel {
+	background: #354051;
 }
 /*
 .elementanimation.show-animation {

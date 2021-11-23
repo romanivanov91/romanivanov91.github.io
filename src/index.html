@@ -82,10 +82,12 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-8">
-					<h2>ОБО МНЕ</h2>
-					<img src="img/ia2.png" alt="Мое фото">
+					<h2 class="resumeh2">ОБО МНЕ</h2>
+					<img src="img/ia2.png" alt="Мое фото" class="resumeimg">
+					<div class="resumepinput">
 					<p>Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне. Меня зовут Иванов Роман и это текст обо мне.</p>
 					<input type="submit" name="skachat_resume" value="Скачать резюме">
+					</div>
 					</div>
 				<div class="col-2"></div>
 			</div>
@@ -130,7 +132,27 @@
 		<h2>Кейсы</h2>
 		<p class="zag">Описание</p>
 		<div class="skreen">
-		<img src="img/фотка.png" alt="Скриншот сайта">
+		<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/yandexstart.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/yandexpogoda.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/yandexkarty.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-2 col-md-12">
@@ -232,12 +254,50 @@
 	</div>
 	<div class="otzivi" id="idotzivi">
 		<h2>ОТЗЫВЫ</h2>
-		<div class="otziv1">
+		<div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active buttonkarusel" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="buttonkarusel"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="buttonkarusel"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="otziv1">
 			<img src="img/клиент1.png" alt="фото клиента 1">
 			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
 			<p><b>Имя клиента 1,</b> компания</p>
 		</div>
-		<!--<div class="otziv2">
+    </div>
+    <div class="carousel-item">
+      <div class="otziv2">
+			<img src="img/клиент2.png" alt="фото клиента 2">
+			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
+			<p><b>Имя клиента 2,</b> компания</p>
+		</div>
+    </div>
+    <div class="carousel-item">
+      <div class="otziv3">
+			<img src="img/клиент3.png" alt="фото клиента 3">
+			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
+			<p><b>Имя клиента 3,</b> компания</p>
+		</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+		<!--<div class="otziv1">
+			<img src="img/клиент1.png" alt="фото клиента 1">
+			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
+			<p><b>Имя клиента 1,</b> компания</p>
+		</div>
+		<div class="otziv2">
 			<img src="img/клиент2.png" alt="фото клиента 2">
 			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
 			<p><b>Имя клиента 2,</b> компания</p>
@@ -246,7 +306,7 @@
 			<img src="img/клиент3.png" alt="фото клиента 3">
 			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
 			<p><b>Имя клиента 3,</b> компания</p>
-		</div>)-->
+		</div>-->
 	</div>
 	<div class="mycontact" id="idmycontact">
 		<h2>МОИ КОНТАКТЫ</h2>

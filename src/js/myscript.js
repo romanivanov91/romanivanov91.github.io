@@ -1,11 +1,11 @@
 "use strict"
 
-/*
-$(document).ready (function() {
+
+/*$(document).ready (function() {  //отложенная анимация)
 
 	let options = {threshold: [0.5]};
 	let observer = new IntersectionObserver(onEntry, options);
-	let elements = $('.elementanimation')
+	let elements = $('.webdisign, ')
 	elements.each ((i, el) => {
 		observer.observe (el);
 	})
@@ -15,7 +15,7 @@ $(document).ready (function() {
         duration: 1200
     });
 
-})
+})*/
 
 function onEntry (entry) {
 	entry.forEach (change => {
@@ -24,7 +24,7 @@ function onEntry (entry) {
 		}
 	})
 }
-*/
+
 
 $(document).ready(function () {
 
@@ -50,8 +50,33 @@ $(document).ready(function () {
 
 });
 
+$('a[href^="#"]').click (function() {
+	let valHref = $(this).attr("href");
+	$('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"})
+})
 
-let selectTip = document.querySelector('select.tip');
+
+let select = document.querySelector ("select");
+let cenaSaita;
+let srokSaita;
+
+$("select").on('change', raschetcenasrocksaita);
+
+function raschetcenasrocksaita() {
+	let znachvibortip = select.value;	
+	if (znachvibortip == 'internetmag') {cenaSaita = 100000; srokSaita = 40
+	} else if (znachvibortip == 'saityslyg') {cenaSaita = 50000; srokSaita = 20
+	} else if (znachvibortip == 'landingpage') {cenaSaita = 15000; srokSaita = 2
+	} else if (znachvibortip == 'visitka') {cenaSaita = 10000; srokSaita = 2
+	} else if (znachvibortip == 'informsait') {cenaSaita = 70000; srokSaita = 30
+	} else {znachvibortip == 'not'};
+}
+console.log (cenaSaita);
+console.log (srokSaita);
+
+/*
+let selectTip = document.querySelector('select');
+/*let selectTip = document.querySelector('select.tip');
 let selectDizain = document.querySelector('select.dizain');
 let selectAdaptivnost = document.querySelector('select.adaptivnost');
 let srok = document.querySelector('td.prav1');
@@ -63,6 +88,7 @@ let srokDisign;
 let cenaAdaptivnost;
 let srokAdaptivnost;
 
+$("select").on('change', raschetcenasrocksaita());
 selectTip.addEventListener('change', raschetcenasrocksaita());
 
 function raschetcenasrocksaita() {	
@@ -73,13 +99,13 @@ function raschetcenasrocksaita() {
 	} else if (znachvibortip == 'visitka') {cenaSaita = 10000; srokSaita = 2
 	} else if (znachvibortip == 'informsait') {cenaSaita = 70000; srokSaita = 30
 	} else {znachvibortip == "not"};
-	/*return cenaSaita, srokSaita*/
+	/*return cenaSaita, srokSaita
 }
 
 console.log (cenaSaita);
 console.log (srokSaita);
 
-selectDizain.addEventListener('change', raschetcenasrocksaitadisign());
+$("select").on("change", raschetcenasrocksaitadisign());
 
 function raschetcenasrocksaitadisign() {
 	let znachvibordisign = selectDizain.value;
@@ -90,10 +116,10 @@ function raschetcenasrocksaitadisign() {
 	} else if (znachvibordisign == 'risstyle') {cenaDisign = 20000; srokDisign = 10
 	} else if (znachvibordisign == 'informstyle') {cenaDisign = 25000; srokDisign = 15
 	} else {znachvibordisign == "not"};
-	/*return cenaDisign, srokDisign*/
+	return cenaDisign, srokDisign
 }
 
-selectAdaptivnost.addEventListener('change', raschetcenasrocksaitaadaptivnost());
+$("select").on("change", raschetcenasrocksaitaadaptivnost());
 
 function raschetcenasrocksaitaadaptivnost() {
 	let znachviboradaptivnost = selectAdaptivnost.value;
@@ -102,7 +128,7 @@ function raschetcenasrocksaitaadaptivnost() {
 	} else if (znachviboradaptivnost == 'mobail') {cenaAdaptivnost = 15000; srokAdaptivnost = 3
 	} else if (znachviboradaptivnost == 'pcmobail') {cenaAdaptivnost = 30000; srokAdaptivnost = 10
 	} else {znachviboradaptivnost == "not"};
-	/*return cenaAdaptivnost, srokAdaptivnost*/
+	return cenaAdaptivnost, srokAdaptivnost
 }
 
 
@@ -114,11 +140,7 @@ console.log (srokAdaptivnost);
 
 srok.textContent = srokSaita + srokDisign + srokAdaptivnost;
 stoimost.textContent = cenaSaita + cenaDisign + cenaAdaptivnost;
-
-$('a[href^="#"]').click (function() {
-	let valHref = $(this).attr("href");
-	$('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"})
-})
+*/
 
 
 
