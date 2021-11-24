@@ -224,7 +224,7 @@ nav {
 		opacity: 1;
 	}
 }
-.resume h2 {
+.resumeh2 {
 	padding-top: 50px;
 	margin: 0px auto;
 	width: 150px;
@@ -236,13 +236,16 @@ nav {
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: #d17700;
-	-webkit-animation: resh2move 2s ease forwards;
+	/*-webkit-animation: resh2move 2s ease forwards;
 	-o-animation: resh2move 2s ease forwards;
 	animation: resh2move 2s ease forwards;
 	-webkit-animation-delay: 5s;
 	-o-animation-delay: 5s;
-	animation-delay: 5s;
+	animation-delay: 5s;*/
 	opacity: 0;
+}
+.resumeh2.animClass {
+	animation: resh2move 2s ease forwards;
 }
 @keyframes resimgmove {
 	from {
@@ -253,16 +256,19 @@ nav {
 		opacity: 1;
 	}
 }
-.resume img {
+.resumeimg {
 	display: block;
 	margin: 0px auto;
-	-webkit-animation: resimgmove 2s ease forwards;
+	/*-webkit-animation: resimgmove 2s ease forwards;
 	-o-animation: resimgmove 2s ease forwards;
 	animation: resimgmove 2s ease forwards;
 	-webkit-animation-delay: 5s;
 	-o-animation-delay: 5s;
-	animation-delay: 5s;
+	animation-delay: 5s;*/
 	opacity: 0;
+}
+.resumeimg.animClass {
+	animation: resimgmove 2s ease forwards;
 }
 @keyframes respmove {
 	from {
@@ -272,18 +278,21 @@ nav {
 		opacity: 1;;
 	}
 }
-.resume p {
+.resumep {
 	font-size: 14px;
 	color: #a8acb2;
 	margin: 0px auto;
 	padding-bottom: 36px;
-	-webkit-animation: respmove 1s ease forwards;
+	/*-webkit-animation: respmove 1s ease forwards;
 	-o-animation: respmove 1s ease forwards;
 	animation: respmove 1s ease forwards;
 	-webkit-animation-delay: 6s;
 	-o-animation-delay: 6s;
-	animation-delay: 6s;
+	animation-delay: 6s;*/
 	opacity: 0;
+}
+.resumep.animClass {
+	animation: respmove 1s ease forwards;
 }
 @keyframes respmove {
 	from {
@@ -293,7 +302,7 @@ nav {
 		opacity: 1;;
 	}
 }
-.resume input {
+.resumeinput {
 	display: block;
 	height: 35px;
 	margin: 0px auto 30px auto;
@@ -310,14 +319,17 @@ nav {
 	background-position: left center;
 	background-size: 25px;
 	transition: all 0.5s;
-	transform: scale(1.0)
-	-webkit-animation: respmove 1s ease forwards;
+	transform: scale(1.0);
+	/*-webkit-animation: respmove 1s ease forwards;
 	-o-animation: respmove 1s ease forwards;
 	animation: respmove 1s ease forwards;
 	-webkit-animation-delay: 6s;
 	-o-animation-delay: 6s;
-	animation-delay: 6s;
+	animation-delay: 6s;*/
 	opacity: 0;
+}
+.resumeinput.animClass {
+	animation: respmove 1s ease forwards;
 }
 .resume input:hover {
 	background: #344051;
@@ -389,13 +401,17 @@ nav {
 	margin: 100px auto auto auto;
 	width: 100%;
 	text-align: center;
-	-webkit-animation: skwebmove 1s ease forwards;
+	/*-webkit-animation: skwebmove 1s ease forwards;
 	-o-animation: skwebmove 1s ease forwards;
 	animation: skwebmove 1s ease forwards;
 	-webkit-animation-delay: 9s;
 	-o-animation-delay: 9s;
-	animation-delay: 9s;
+	animation-delay: 9s;*/
 	opacity: 0;
+}
+.webdisign.animClass {
+	animation: skwebmove 1s ease forwards;
+	animation-delay: 1s;
 }
 @keyframes skrazmove {
 	from {
@@ -412,13 +428,16 @@ nav {
 	margin: 100px auto auto auto;
 	width: 100%;
 	text-align: center;
-	-webkit-animation: skrazmove 1s ease forwards;
+	/*-webkit-animation: skrazmove 1s ease forwards;
 	-o-animation: skrazmove 1 ease forwards;
 	animation: skrazmove 1s ease forwards;
 	-webkit-animation-delay: 7s;
 	-o-animation-delay: 7s;
-	animation-delay: 7s;
+	animation-delay: 7s;*/
 	opacity: 0;
+}
+.razrabotka.animClass {
+	animation: skrazmove 1s ease forwards;
 }
 @keyframes skrceomove {
 	from {
@@ -435,13 +454,16 @@ nav {
 	margin: 100px auto auto auto;
 	width: 100%;
 	text-align: center;
-	-webkit-animation: skrceomove 1s ease forwards;
+	/*-webkit-animation: skrceomove 1s ease forwards;
 	-o-animation: skrceomove 1s ease forwards;
 	animation: skrceomove 1s ease forwards;
 	-webkit-animation-delay: 7s;
 	-o-animation-delay: 7s;
-	animation-delay: 7s;
+	animation-delay: 7s;*/
 	opacity: 0;
+}
+.ceo.animClass {
+	animation: skrceomove 1s ease forwards;
 }
 @keyframes skrmarmove {
 	from {
@@ -459,13 +481,17 @@ nav {
 	margin: 100px auto auto auto;
 	width: 100%;
 	text-align: center;
-	-webkit-animation: skrmarmove 1s ease forwards;
+	/*-webkit-animation: skrmarmove 1s ease forwards;
 	-o-animation: skrmarmove 1s ease forwards;
 	animation: skrmarmove 1s ease forwards;
 	-webkit-animation-delay: 9s;
 	-o-animation-delay: 9s;
-	animation-delay: 9s;
+	animation-delay: 9s;*/
 	opacity: 0;
+}
+.marketing.animClass {
+	animation: skrmarmove 1s ease forwards;
+	animation-delay: 1s;
 }
 .cases {
 	width: 100%;
@@ -953,9 +979,54 @@ footer p {
 .buttonkarusel {
 	background: #354051;
 }
-/*
-.elementanimation.show-animation {
-	opacity: 1;
-	transition: opacity 1s;
+
+/*Модальное окно*/
+#bg_popup{
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+position: fixed;
+z-index: 99999;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
 }
-*/
+  
+#popup {
+background: #fff;
+width: 520px;
+margin: 25% auto;
+padding: 5px 20px 13px 20px;
+border: 2px solid #1BA600;
+position: relative;
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0px 0px 20px #000;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+  
+.close{
+display:block;
+position:absolute;
+top:-12px;
+right:5px;
+width:25px;
+height:25px;
+line-height:28px;
+color:#fff;
+background:#1BA600;
+cursor:pointer;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background-color:#f30;
+} 
