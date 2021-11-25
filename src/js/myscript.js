@@ -100,8 +100,14 @@ function raschetcenysaita () {
 	stoimost.textContent = cenaSaita + cenaDisign + cenaAdaptivnost + " рублей";
 };
 
+setTimeout(function(){
+  $('.modalbutton').trigger('click');
+}, 5000);
+
+/*
 var delay_popup = 10000;
     setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+*/
 
 
 

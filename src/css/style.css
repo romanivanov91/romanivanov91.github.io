@@ -211,6 +211,11 @@ nav {
 .title_conteiner input:active {
 	transform: scale(1.2)
 }
+.modalokno {
+	position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
 .resume {
 	width: 100%;
 	background-color: #fcfdfd;
@@ -971,16 +976,20 @@ footer p {
 .resume {
 	height: 900px;
 }
-}
 
+
+
+/*
 .elementanimation {
 	opacity: 0;
 }
 .buttonkarusel {
 	background: #354051;
-}
+}*/
 
-/*Модальное окно*/
+
+
+/*Модальное окно
 #bg_popup{
 background-color: rgba(0, 0, 0, 0.8);
 display: none;
@@ -1030,3 +1039,4 @@ box-shadow: 1px 1px 3px #000;
 .close:hover {
 background-color:#f30;
 } 
+*/
