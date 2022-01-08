@@ -100,9 +100,22 @@ function raschetcenysaita () {
 	stoimost.textContent = cenaSaita + cenaDisign + cenaAdaptivnost + " рублей";
 };
 
+/*Выводит модальное окно на передний план, до этого почему то затенялось. Способ нашел на этом сайте: https://qna.habr.com/q/983087*/
+$(function () {
+     $("#modalVote").appendTo("body");
+});
+
+/*Маска для телефона (плагин maskedinput)*/
+$(".modalclienttelefone").mask("+7(999) 999-9999");
+
+/*Маска для e-mail (плагин maskedinput) не сделал
+$(".pochta").mask("*@*.*");*/                      
+
+/*нажатие кнопки по таймеру
 setTimeout(function(){
   $('.modalbutton').trigger('click');
 }, 5000);
+*/
 
 /*
 var delay_popup = 10000;

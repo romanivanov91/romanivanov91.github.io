@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Иванов Роман - Frontend-разработчик</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -61,6 +62,43 @@
 				</div>
 			</div>
 		</nav>
+<div class="modalbutton">
+	<div>
+<!-- Button trigger modal -->
+				<button type="button" class="btn btn-dark animate__animated animate__swing animate__infinite" data-bs-toggle="modal" data-bs-target="#modalVote">
+  			Заказать обратный звонок
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="modalVote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="exampleModalLabel"></h5>
+        				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      				</div>
+      				<div class="modal-body telomadalokno">
+        					<h4>Приветствую!</h4>
+        					<p>Закажи обратный звонок прямо сейчас и получи скидку на заказ 10%.</p>
+        					<form action="php/test.php" method="post">
+        					<p>Ваше имя:</p>
+        					<input class="modalimia" type="text" name="youname2" required placeholder="Введите ваше имя">
+        					<p>Ваш номер телефона:</p>
+        					<input class="modalclienttelefone" type="text" name="youtelefone" required placeholder="Введите ваш номер телефона">
+        					<input class="otpravka" type="submit" name="otpravit1" value="Отправить1">
+        					</form>
+      				</div>
+      				<div class="modal-footer">
+        			<!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Выход</button>
+        			<button type="button" class="btn btn-primary">Заказать звонок</button>-->
+      				</div>
+    				</div>
+  				</div>
+				</div>
+</div>
+
+
+	
 	</header>
 	<div class="main">
 			<div class="container h-100">
@@ -77,40 +115,6 @@
 				</div>
 			</div>
 	</div>
-
-<div class="modalokno">
-
-	<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h4>Приветствую!</h4>
-        <p>Закажи обратный звонок прямо сейчас и получи скидку на заказ 10%.</p>
-        <form action="a">
-        <input class="clienttelefone" type="text" name="youtelefone" placeholder="Ваш номер телефона">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Выход</button>
-        <button type="button" class="btn btn-primary">Заказать звонок</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-
 
 <!-- Старое модальное окно 
 <div id="bg_popup">
@@ -350,7 +354,7 @@
 			<p>Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента, Отзыв клиента.</p>
 			<p><b>Имя клиента 3,</b> компания</p>
 		</div>-->
-	</div>
+</div>
 	<div class="mycontact" id="idmycontact">
 		<h2>МОИ КОНТАКТЫ</h2>
 		<p>Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, Какой-то текст, </p>
@@ -371,24 +375,24 @@
 		<h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
 		<form action="a">
 			<div class="containerflex3">
-				<input class="imia" type="text" name="youname" placeholder="Имя">
-				<input class="pochta" type="text" name="youemail" placeholder="E-mail">
+				<input class="imia" type="text" name="youname1" required placeholder="Имя">
+				<input class="pochta" type="text" name="youemail" required placeholder="E-mail">
 			</div>
 			<div class="containerflex4">
-				<textarea class="sms" name="youmessage" placeholder="Сообщение"></textarea>
-				<input class="otpravka" type="submit" name="otpravit" value="Отправить">
+				<textarea class="sms" name="youmessage" required placeholder="Сообщение"></textarea>
+				<input class="otpravka" type="submit" name="otpravit2" value="Отправить2">
 			</div>
 		</form>
 		<div class="socseti">
 			<div class="socsetiflex1">
-				<a href=""><img src="img/фб.png"></a>
-				<a href=""><img src="img/твитер.png"></a>
-				<a href=""><img src="img/мяч.png"></a>
+				<a href="" title="Написать мне в FaceBook"><img src="img/фб.png"></a>
+				<a href="" title="Написать мне в Twitter"><img src="img/твитер.png"></a>
+				<a href="" title="Написать мне где-то"><img src="img/мяч.png"></a>
 			</div>
 			<div class="socsetiflex2">
-				<a href=""><img src="img/киса.png"></a>
-				<a href=""><img src="img/инст.png"></a>
-				<a href=""><img src="img/ин.png"></a>
+				<a href="" title="Написать мне где-то"><img src="img/киса.png"></a>
+				<a href="" title="Написать мне Instagram"><img src="img/инст.png"></a>
+				<a href="" title="Написать мне где-то"><img src="img/ин.png"></a>
 			</div>
 		</div>
 	</div>
@@ -401,6 +405,7 @@
 	<<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.spincrement.min.js"></script>
 	<script src="js\bootstrap.bundle.js"></script>
+	<script src="js\jquery.maskedinput.min.js"></script>
 	<script src="js\myscript.js"></script>
 </body>
 </html>
